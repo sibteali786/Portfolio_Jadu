@@ -6,3 +6,7 @@
 nav a {
   @apply p-2;
 }
+
+.mobileNav li {
+  @apply p-8;
+}
