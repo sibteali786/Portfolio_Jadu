@@ -9,31 +9,56 @@
       href="https://fonts.googleapis.com/css?family=Stick+No+Bills:200,300,regular,500,600,700,800"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://use.fontawesome.com/cd3b4fa056.js"></script>
+
     <title>Portfolio</title>
   </head>
-  <body class="bg-buttonColor text-fontColor">
-    <nav class="text-xl flex justify-between items-center px-8 py-6 shadow-lg">
-      <div class="text-4xl font-bold tracking-wide">Sibteali Baqar</div>
-      <ul class="hidden md:flex justify-between items-center">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-      <div class="md:hidden">
-        <button>
-          <i class="fa fa-bars" style="font-size: 2rem"></i>
-        </button>
+  <body class="bg-buttonColor text-fontColor overflow-x-hidden">
+    <nav class="text-xl shadow-lg">
+      <div class="flex justify-between items-center px-8 py-6">
+        <div class="text-3xl sm:text-4xl font-bold tracking-wide">
+          Sibteali Baqar
+        </div>
+        <div class="hidden md:flex justify-between items-center">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="md:hidden z-50">
+          <button class="btn text-2xl sm:text-3xl">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="
+          flex flex-col
+          justify-center
+          items-start
+          md:hidden
+          mobileNav
+          px-8
+        "
+      >
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
       </div>
     </nav>
-    <div class="h-screen mobileNav">
-      <ul class="flex flex-col justify-center items-center h-full text-5xl">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
+    <main>
+      <section id="app text-xl text-fontColor h-screen"></section>
+    </main>
+    <script>
+      btn = document.querySelector("button.btn");
+      menu = document.querySelector(".mobileNav");
+      nav = document.querySelector(".nav");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.add("showNav");
+      });
+    </script>
   </body>
 </html>
