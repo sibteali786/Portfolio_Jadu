@@ -14,21 +14,57 @@
 
     <title>Portfolio</title>
   </head>
-  <body class="bg-buttonColor text-fontColor overflow-x-hidden">
-    <nav class="text-xl shadow-lg">
+  <body class="bg-white text-primary overflow-x-hidden">
+    <nav class="">
+      <div
+        class="
+          absolute
+          top-0
+          left-1/2
+          lg:max-w-5xl
+          md:max-w-4xl
+          w-full
+          h-full
+          bg-no-repeat
+        "
+        style="background-image: url('svgexport-5.svg')"
+      ></div>
       <div class="flex justify-between items-center px-8 py-6">
         <div class="text-3xl sm:text-4xl font-bold tracking-wide">
           Sibteali Baqar
         </div>
-        <div class="hidden md:flex justify-between items-center">
+        <div
+          class="
+            hidden
+            md:flex
+            justify-between
+            items-center
+            z-10
+            font-bold
+            text-xl text-white
+          "
+        >
           <a href="">Home</a>
           <a href="">About</a>
           <a href="">Projects</a>
           <a href="">Contact</a>
         </div>
-        <div class="md:hidden z-50">
+        <div class="md:hidden z-10">
           <button class="btn text-2xl sm:text-3xl">
-            <i class="fa fa-bars"></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="22"
+              fill="none"
+              viewBox="0 0 18 16"
+            >
+              <path
+                fill="#fff"
+                fill-rule="evenodd"
+                d="m3 1 1-1h13a1 1 0 1 1 0 2H4L3 1Zm4 14 1-1h9a1 1 0 1 1 0 2H8l-1-1ZM1 7a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2H1Z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -48,9 +84,13 @@
         <a href="">Contact</a>
       </div>
     </nav>
-    <main>
-      <section id="app text-xl text-fontColor h-screen"></section>
-    </main>
+
+    <section id="app text-xl text-fontColor h-screen">
+      <div class="text-5xl">I am</div>
+      <div class="md:text-7xl lg:text-8xl">Sibteali Baqar</div>
+      <div class="md:text-5xl lg:text-6xl">Web Developer</div>
+    </section>
+
     <script>
       btn = document.querySelector("button.btn");
       menu = document.querySelector(".mobileNav");
