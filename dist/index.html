@@ -92,6 +92,7 @@
       class="
         h-screen
         mt-32
+        mx-8
         flex flex-col
         items-center
         justify-around
@@ -120,26 +121,129 @@
         </div>
       </div>
       <div
-        class="
-          bg-gradient-to-r
-          from-yellow-400
-          via-red-500
-          to-pink-500
-          h-64
-          w-64
-          rounded-t-full rounded-l-full
-          lg:mr-60
-          md:mr-20
-          transform
-          lg:scale-125
-          md:scale-110
-        "
+        class="lg:mr-10 md:mr-10 transform lg:scale-150 md:scale-110 scale-125"
       >
-        <img
-          src="MyPic.png"
-          alt="Personal Pic"
-          class="z-10 transform -translate-y-6 translate-x-20"
-        />
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="204"
+          height="204.5"
+          viewBox="0 0 204 204.5"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x1="0.2"
+              y1="102.2"
+              x2="204.2"
+              y2="102.2"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#fcee21" />
+              <stop offset="0.03" stop-color="#fad921" />
+              <stop offset="0.13" stop-color="#f6a022" />
+              <stop offset="0.23" stop-color="#f37123" />
+              <stop offset="0.32" stop-color="#f04c23" />
+              <stop offset="0.41" stop-color="#ef3224" />
+              <stop offset="0.48" stop-color="#ed2224" />
+              <stop offset="0.54" stop-color="#ed1c24" />
+              <stop offset="0.62" stop-color="#ed1c27" />
+              <stop offset="0.68" stop-color="#ee1a32" />
+              <stop offset="0.74" stop-color="#f01843" />
+              <stop offset="0.8" stop-color="#f2155b" />
+              <stop offset="0.85" stop-color="#f4117b" />
+              <stop offset="0.9" stop-color="#f70ca1" />
+              <stop offset="0.95" stop-color="#fb06ce" />
+              <stop offset="1" stop-color="#f0f" />
+            </linearGradient>
+            <clipPath id="clip-path" transform="translate(-0.2 -0.2)">
+              <circle
+                cx="102.2"
+                cy="102.2"
+                r="102"
+                style="fill: url(#linear-gradient)"
+              />
+            </clipPath>
+          </defs>
+          <title>MyPic</title>
+          <circle
+            cx="102"
+            cy="102"
+            r="102"
+            style="fill: url(#linear-gradient)"
+          />
+          <g style="clip-path: url(#clip-path)">
+            <image
+              width="193"
+              height="278"
+              transform="translate(36 21) scale(0.66)"
+              xlink:href="MyPic.png"
+            />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="project">
+      <div class="bg-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#5E98FA"
+            fill-opacity="1"
+            d="M0,64L48,53.3C96,43,192,21,288,48C384,75,480,149,576,192C672,235,768,245,864,213.3C960,181,1056,107,1152,69.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="bg-backColor2">
+        <div class="flex-col justify-center items-center">
+          <div>
+            <p class="md:text-8xl font-semibold text-white text-center">Projects</p>
+          </div>
+          <div class=" sm:grid grid-cols-3 px-8 py-6">
+            <div class="flex flex-col justify-between items-center px-4 ">
+              <img src="" alt="" />
+              <div>
+                <p class="font-bold text-4xl">Covid-19 Tracker</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  ea, voluptas a expedita maxime magni delectus aliquid quis
+                  atque sunt?
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between items-center px-4 " >
+              <img src="" alt="" />
+              <div>
+                <p class="font-bold text-4xl">Expense Tracker </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  ea, voluptas a expedita maxime magni delectus aliquid quis
+                  atque sunt?
+                </p>
+            </div>
+            </div>
+            <div class="flex flex-col justify-between items-center px-4">
+              <img src="" alt="" />
+              <div>
+                <p class="font-bold text-4xl">Shoe Store</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  ea, voluptas a expedita maxime magni delectus aliquid quis
+                  atque sunt?
+                </p>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#FFFFFF"
+            fill-opacity="1"
+            d="M0,64L48,53.3C96,43,192,21,288,48C384,75,480,149,576,192C672,235,768,245,864,213.3C960,181,1056,107,1152,69.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </section>
 

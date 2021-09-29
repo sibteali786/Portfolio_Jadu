@@ -10,6 +10,8 @@ module.exports = {
         primary: "#003049",
         buttonColor: "#F77F00",
         fontColor: "#EAE2B7",
+        backColor: "#833FFD",
+        backColor2: "#5E98FA",
       },
     },
   },

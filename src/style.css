@@ -10,6 +10,11 @@ nav a {
 nav a:hover {
   @apply transform bg-white text-primary;
 }
-.mobileNav li {
-  @apply p-8;
+
+.mobileNav a {
+  @apply p-8 transition ease-in-out duration-500 rounded-lg;
+}
+
+.mobileNav a:hover {
+  @apply transform bg-primary text-white;
 }
