@@ -11,7 +11,7 @@
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://use.fontawesome.com/cd3b4fa056.js"></script>
-
+    <script src="./index.js"></script>
     <title>Portfolio</title>
   </head>
   <body class="bg-white text-primary overflow-x-hidden">
@@ -30,7 +30,7 @@
         style="background-image: url('svgexport-5.svg')"
       ></div>
       <div class="flex justify-between items-center px-8 py-6">
-        <div class="text-3xl sm:text-5xl font-bold tracking-wide z-10">
+        <div class="text-4xl sm:text-5xl font-bold tracking-wide z-10">
           Sibteali Baqar
         </div>
         <div
@@ -198,42 +198,77 @@
         </svg>
       </div>
       <div class="bg-backColor2">
-        <div class="flex-col justify-center items-center">
+        <div class="flex flex-col justify-between items-center">
           <div>
-            <p class="md:text-8xl font-semibold text-white text-center">Projects</p>
+            <p
+              class="
+                text-7xl
+                sm:text-5xl
+                md:text-8xl
+                font-semibold
+                text-black text-center
+                pb-10
+              "
+            >
+              Projects
+            </p>
           </div>
-          <div class=" sm:grid grid-cols-3 px-8 py-6">
-            <div class="flex flex-col justify-between items-center px-4 ">
-              <img src="" alt="" />
-              <div>
-                <p class="font-bold text-4xl">Covid-19 Tracker</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  ea, voluptas a expedita maxime magni delectus aliquid quis
-                  atque sunt?
-                </p>
+          <div
+            class="
+              my-4
+              sm:gap-10 sm:grid sm:grid-cols-2
+              lg:grid lg:grid-cols-3
+              px-8
+              py-6
+              lg:gap-8
+            "
+          >
+            <div class="card">
+              <img src="./covid-19.png" alt="" class="w-full sm:h-full h-32" />
+              <div
+                class="font-bold text-3xl sm:text-4xl text-black py-2 sm:py-4"
+              >
+                Shoe Store
+              </div>
+              <div class="text-md sm:text-xl text-gray-300 px-3 py-1 sm:py-3">
+                A react app made using <strong>React </strong>,<strong
+                  >Material UI </strong
+                >, <strong>React Spinners</strong> for starting animations and
+                <strong>Axios</strong> for making API requests.
               </div>
             </div>
-            <div class="flex flex-col justify-between items-center px-4 " >
-              <img src="" alt="" />
-              <div>
-                <p class="font-bold text-4xl">Expense Tracker </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  ea, voluptas a expedita maxime magni delectus aliquid quis
-                  atque sunt?
-                </p>
+            <div class="card">
+              <img src="./shoeStore.png" alt="" class="w-full sm:h-full h-32" />
+              <div
+                class="font-bold text-3xl sm:text-4xl text-black py-2 sm:py-4"
+              >
+                Covid-19 Tracker
+              </div>
+              <div class="text-md sm:text-xl text-gray-300 px-3 py-1 sm:py-3">
+                A react app made using <strong>React </strong>,<strong
+                  >Material UI </strong
+                >, <strong>Chart Js</strong> for making dynamic charts and
+                <strong>Axios</strong> and <strong>Postman</strong> for making
+                API requests to receive data.
+              </div>
             </div>
-            </div>
-            <div class="flex flex-col justify-between items-center px-4">
-              <img src="" alt="" />
-              <div>
-                <p class="font-bold text-4xl">Shoe Store</p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  ea, voluptas a expedita maxime magni delectus aliquid quis
-                  atque sunt?
-                </p>
+            <div class="card">
+              <img
+                src="./ExpTracker.png"
+                alt=""
+                class="w-full sm:h-full h-32"
+              />
+              <div
+                class="font-bold text-3xl sm:text-4xl text-black py-2 sm:py-4"
+              >
+                Expense Tracker
+              </div>
+              <div class="text-md sm:text-xl text-gray-300 px-3 py-1 sm:py-3">
+                A react app made using <strong>React </strong>,<strong
+                  >CSS3 </strong
+                >, <strong>Use Context</strong> and
+                <strong>Use Reducer</strong> for managing the state of the App.
+              </div>
             </div>
           </div>
         </div>
@@ -247,6 +282,25 @@
       </div>
     </section>
 
+    <!-- About -->
+
+    <section id="about" class="md:grid md:grid-cols-5 md:gap-6 items-center">
+      <img src="./About.svg" alt="" class="mx-0 sm:mx-4 md:col-span-2" />
+      <div
+        class="flex flex-col justify-between items-center mx-10 md:col-span-3"
+      >
+        <div class="text-5xl sm:text-7xl py-10">About Me</div>
+        <div class="text-xl py-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          commodi debitis reiciendis provident ex tempora tempore voluptate ipsa
+          voluptas, voluptatum aperiam qui quibusdam quod. Eaque minus,
+          molestias suscipit impedit, sed dolore sequi similique nihil nisi
+          sapiente aliquam a in ad!
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact"></section>
     <script>
       btn = document.querySelector("button.btn");
       menu = document.querySelector(".mobileNav");
