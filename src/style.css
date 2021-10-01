@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 nav a {
-  @apply px-4 py-2 mx-8 transition ease-in-out duration-500 rounded-lg;
+  @apply px-4 py-2 lg:mx-4 xl:mx-8 transition ease-in-out duration-500 rounded-lg;
 }
 
 nav a:hover {
@@ -12,7 +12,7 @@ nav a:hover {
 }
 
 .mobileNav a {
-  @apply p-8 transition ease-in-out duration-500 rounded-lg;
+  @apply m-4 transition ease-in-out duration-500 rounded-lg;
 }
 
 .mobileNav a:hover {

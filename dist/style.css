@@ -33139,8 +33139,6 @@ video {
 }
 
 nav a {
-  margin-left: 2rem;
-  margin-right: 2rem;
   border-radius: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -33153,6 +33151,20 @@ nav a {
   transition-duration: 150ms;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1024px) {
+  nav a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 nav a:hover {
@@ -33171,8 +33183,8 @@ nav a:hover {
 }
 
 .mobileNav a {
+  margin: 1rem;
   border-radius: 0.5rem;
-  padding: 2rem;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
