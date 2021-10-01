@@ -1,0 +1,37 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a {
+  @apply px-4 py-2 lg:mx-4 xl:mx-8 transition ease-in-out duration-500 rounded-lg;
+}
+
+nav a:hover {
+  @apply transform bg-white text-primary;
+}
+
+.mobileNav a {
+  @apply m-4 transition ease-in-out duration-500 rounded-lg;
+}
+
+.mobileNav a:hover {
+  @apply transform bg-primary text-white;
+}
+
+.card {
+  @apply flex flex-col
+                justify-between
+                items-center
+                overflow-hidden
+                rounded-lg
+                bg-backColor shadow-lg my-8 sm:mx-0 mx-12 transition ease-in-out duration-500;
+}
+
+.card:hover {
+  @apply transform scale-110;
+}
+
+.footer span {
+  @apply my-2;
+}
